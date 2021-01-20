@@ -1,0 +1,50 @@
+# Ore N Soar plugin developed by mwaning | https://www.spigotmc.org/resources/ore-n-soar.85854/
+
+# Decide which items you want to use as currencies!
+# Go to a new line under Currencies, add a dash and a space, then type the item name you want to use, followed by a space, and the amount of that item it costs to fly for a minute.
+# Item names that normally include a space should use an underscore instead.
+# If you need some item name reference, check out https://github.com/mwaning/Spigot.OarNSoar/blob/main/Item%20List.txt
+# Example:
+# - diamond 1
+# - emerald 3
+# - gold_ingot 5
+
+Currencies:
+- diamond 1
+- emerald 3
+- gold_ingot 5
+
+# The error and alert messages are also customizable!
+# If you want to use double quotes or the ampersand, do the following: \" outputs " and && outputs &
+# 
+# Color and Formatting Codes:
+# &0 = Black     | &1 = Dark Blue     | &2 = Dark Green | &3 Dark Aqua
+# &4 = Dark Red  | &5 = Dark Purple   | &6 = Gold       | &7 = Gray
+# &8 = Dark Gray | &9 = Blue          | &a = Green      | &b = Aqua
+# &c = Red       | &d = Light Purple  | &e = Yellow     | &f = White
+# &l = Bold      | &m = Strikethrough | &n = Underline  | &o = Italic
+# &r = Reset
+
+Errors:
+- "&l&f[OreNSoar] &r&cThis command can only be run by a player!"
+- "&l&f[OreNSoar] &r&cThis command takes at least 2 arguments!"
+- "&l&f[OreNSoar] &r&cThis command only takes up to 3 arguments!"
+- "&l&f[OreNSoar] &r&cArgument 2 needs to be an integer!"
+- "&l&f[OreNSoar] &r&cValue of argument 2 can't be lower than 1!"
+- "&l&f[OreNSoar] &r&cThis command takes no arguments!"
+# Uses variable %target%
+- "&l&f[OreNSoar] &r&c%target% is not online or does not exist!"
+# Uses variable %currency%
+- "&l&f[OreNSoar] &r&c%currency% is not an available currency!"
+# Uses variables %amount, %currency, and %minutes%
+- "&l&f[OreNSoar] &r&cIt costs %amount% %currency%(s) to fly for %minutes% minute(s)!"
+
+Alerts:
+- "&l&f[OreNSoar] &r&eYou have 10 seconds of flight remaining!"
+- "&l&f[OreNSoar] &r&eFlight Mode disabled."
+# Uses variable %minutes%
+- "&l&f[OreNSoar] &r&aFlight Mode enabled for %minutes% minute(s)."
+# Uses variables %user% and %minutes%
+- "&l&f[OreNSoar] &r&aFlight Mode enabled by %user% for %minutes% minute(s)."
+# Uses variables %target% and %minutes%
+- "&l&f[OreNSoar] &r&aFlight Mode of %target% enabled for %minutes% minute(s)."
